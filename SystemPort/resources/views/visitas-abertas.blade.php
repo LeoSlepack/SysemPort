@@ -12,6 +12,7 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
+                                    <th>Nome</th>
                                     <th>Tipo de Visita</th>
                                     <th>Responsável</th>
                                     <th>Entrada autorizada por:</th>
@@ -22,6 +23,7 @@
                                 @foreach ($visitasAbertas as $visita)
                                 <tr>
                                     <td>{{ $visita->id }}</td>
+                                    <td>{{ $visita->nome_pessoa }}</td>
                                     <td>{{ $visita->tipVisita }}</td>
                                     <td>{{ $visita->responsavel }}</td>
                                     <td>{{ $visita->autorizado }}</td>
