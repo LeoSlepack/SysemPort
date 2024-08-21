@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Portaria;
 use App\Models\Visit;
+use Carbon\Carbon;
 
 class PortariaController extends Controller
 {
@@ -40,7 +41,7 @@ class PortariaController extends Controller
         $portaria->veiculo = $request->veiculo;
         $portaria->placa = $request->placa;
         $portaria->motorista = $request->motorista;
-
+        $portaria->created_at = Carbon::now();
         // Salva os dados no banco de dados
         $portaria->save();
 
@@ -95,6 +96,9 @@ class PortariaController extends Controller
 
         // Associar o dado_id ao registro da visita
         $visit->dado_id = $request->input('dado_id');
+
+        // Definir o campo created_at para a hora atual
+        $visit->created_at = Carbon::now();
 
         // Salvar os dados no banco de dados
         $visit->save();
