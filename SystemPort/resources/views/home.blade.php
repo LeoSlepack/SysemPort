@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card shadow-lg">
                 <div class="card-body">
-                    <h2 class="text-center mb-4">Cadastro Portaria Betel</h2>
+                    <h2 class="text-center mb-4">Cadastro Portaria Betel teste</h2>
                     <!-- Formulário -->
                     <form method="POST" action="{{ url('/salvar-portaria') }}">
                         @csrf
