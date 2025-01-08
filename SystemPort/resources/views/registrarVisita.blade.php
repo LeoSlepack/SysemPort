@@ -22,6 +22,7 @@
                             <select class="form-select" id="tipVisita" name="tipVisita" required>
                                 <option value="">Selecione o tipo de visita</option>
                                 <option value="Visita">Visita</option>
+                                <option value="Busca">Entrevista</option>
                                 <option value="Serviço">Serviço</option>
                                 <option value="Entrega">Entrega</option>
                                 <option value="Busca">Recolhimento</option>
